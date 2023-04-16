@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist/",
+      "module": "es6",
+      "target": "es5",
+      "moduleResolution": "node",
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "lib": ["ES2017", "DOM"],
+      "declaration": true,
+    },
+    "include": ["./src/"],
+    "exclude": ["src/**/*.test.ts", "node_modules"]
+}

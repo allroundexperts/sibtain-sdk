@@ -1,0 +1,47 @@
+{
+  "name": "@allroundexperts/tlor-sdk",
+  "version": "1.0.0",
+  "description": "SDK that communicates with the OneAPI to get the movies related to the Lord of the rings.",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint .",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(ts)\""
+  },
+  "keywords": ["The lord of the rings", "TLOR", "SDK", "OneAPI"],
+  "author": "Sibtain Ali",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "fetch-mock-jest": "^1.5.1",
+    "jest": "^29.5.0",
+    "prettier": "^2.8.7",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7",
+    "reflect-metadata": "^0.1.13",
+    "tsyringe": "^4.7.0"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./jest/setup.ts"
+    ],
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.ts?$": "ts-jest"
+    }
+  }
+}
